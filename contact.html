@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
-<body>
+
+<style>
+    div.form {
+        display: flex;
+        justify-content: center;
+        background-color: hsl(188, 26%, 83%);
+        border: 2px solid #266a74;
+        width: fit-content;
+        margin: auto;
+        padding: 5px 50px;
+        font-size: large;
+    }
     
+
+
+</style>
+
+<body class="contact">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="https://github.com/gultaj7" target="_blank">GITHUB Account</a></li>
+        </ul>
+    </nav>
+
+    <h1>Contact Me!!!!!!!!</h1>
+    <p>Fill out the form below in order to reach me:</p>
+    <div class="form">
+        <form action=""><br>
+
+            <label for="firstname">Your first name:</label><br>
+            <input type="text" placeholder="first name" name="firstname" id="firstname"> <br><br>
+            <label for="lastname">Your last name:</label><br>
+            <input type="text" placeholder="last name" name="lastname" id="lastname"> <br><br>
+            <label for="email">Please insert your email address:</label><br>
+            <input type="text" placeholder="email" name="email" id="email"> <br>
+
+            <br>
+            <label for="">You are: </label><br>
+            <div class="profession">
+                <input type="radio" id="profession1" name="student" value="student">
+                <label for="profession1">Student</label><br>
+                <input type="radio" id="profession2" name="instructor" value="instructor">
+                <label for="profession2">Instructor</label><br>
+                <input type="radio" id="profession3" name="assistant" value="assistant">
+                <label for="profession3">Assistant</label><br>
+                <input type="radio" id="profession4" name="other" value="other">
+                <label for="profession4">other</label><br>
+            </div>
+            
+
+            <br>
+
+            <label for="language1">Which languages you speak?</label><br>
+            <input type="checkbox" id="language1" name="azerbaijani">
+            <label for="language1">Azerbaijani</label><br>
+            <input type="checkbox" id="language2" name="english">
+            <label for="language2">English</label><br>
+            <input type="checkbox" id="language3" name="russian">
+            <label for="language3">Russian</label><br>
+            <input type="checkbox" id="language4" name="french">
+            <label for="language4">French</label><br>
+
+            <br>
+
+            <input type="submit" value="Submit"><br><br>
+
+        </form>
+    </div>
+ 
 </body>
 </html>

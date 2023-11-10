@@ -1,0 +1,39 @@
+body.contact {
+    background-image: url(images/sea.jpg);
+    background-color: #cccccc;
+    height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+body.body-education {
+}
+
+nav {
+    background-color: #296e77;
+    padding:35px; 
+}
+
+/* Style for the navigation links */
+nav ul {
+    list-style-type: none; 
+}
+
+nav li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+nav a {
+    text-decoration: none; 
+    color: #fff; 
+}
+
+#digicard {
+    text-decoration: none;
+    color: #165c65;
+}
+
+
