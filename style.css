@@ -8,8 +8,6 @@ body.contact {
     position: relative;
 }
 
-body.body-education {
-}
 
 nav {
     background-color: #296e77;
@@ -36,4 +34,43 @@ nav a {
     color: #165c65;
 }
 
+.skills td, .skills th, .education td, .education th{
+    border:2px solid black;
+    padding: 10px;
+}
 
+.skills th, .education th {
+    height: 50px;
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+.skills, .education{
+    height: 400px;
+    margin: 10px;
+    border-collapse: collapse;
+    width: 600px;
+    margin: auto;
+}
+
+
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.header-main {
+    text-align: center;
+}
+
+div.form {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(188, 26%, 83%);
+    border: 2px solid #266a74;
+    width: fit-content;
+    margin: auto;
+    padding: 5px 50px;
+    font-size: large;
+}
