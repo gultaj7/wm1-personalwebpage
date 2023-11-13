@@ -104,3 +104,13 @@ img.gultaj{
     padding: 40px;
 }
 
+.content-home {
+    clear:left;
+}
+
+.pic-and-description{
+    border: 3px solid #165c65;
+    overflow: auto;
+}
+
+
