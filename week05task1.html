@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 5 task 1</title>
+</head>
+<body>
+    <script>
+        // Get the full name and course grade of the user.
+        // Greet the user.
+        // Let the user know if she/he passes or fails the course by alerting a message.
+        // In case the user passes the course alert the letter grade.
+
+        let fullName = prompt("enter your full name");
+        let grade = prompt("enter your course grade:");
+
+        alert("Hello, " + fullName + "!");
+
+        if(grade >= 59.5) {
+            alert("Congratulations, you pass the course!")
+            if(grade>= 90) {
+                alert("your letter grade is A");
+            } else 
+            if(grade>= 80) {
+                alert("your letter grade is B");
+            } else
+            if(grade>= 70) {
+                alert("your letter grade is C");
+            } else 
+            if(grade>= 60) {
+                alert("your letter grade is D");
+            }   
+
+        } 
+        else {
+            alert("unfortunately, you fail the course")
+        }
+
+    </script>
+</body>
+</html>
