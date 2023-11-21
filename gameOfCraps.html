@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Craps</title>
+</head>
+<body>
+    <script>
+
+        let dice;
+        let point = 0;
+        function roll() {
+            return Math.floor(Math.random() * 6) + 1;
+        }
+
+        function rollTwoDice() {
+
+            document.getElementById("status").innerHTML = "";
+
+            if(point == 0) {
+                let dice1 = Math.floor(Math.random() * 6) + 1;
+                let dice2 = Math.floor(Math.random() * 6) + 1;
+                dice = dice1 + dice2;
+
+                if(dice == 7 || dice == 11){
+                    document.getElementById("status").innerHTML = "you win!";
+                    point = 0;
+                } else if(dice == 2 || dice == 3 || dice == 12){
+                    document.getElementById("status").innerHTML = "crapped out!";
+                    point = 0;
+                } else {
+                    point = dice;
+                    document.getElementById("point").innerHTML = "Point is established! New aim is to roll: " + point;
+                }
+
+                return dice;
+            }
+
+            else {
+                let dice1 = Math.floor(Math.random() * 6) + 1;
+                let dice2 = Math.floor(Math.random() * 6) + 1;
+                dice = dice1 + dice2;
+
+                if(dice == point){
+                    document.getElementById("status").innerHTML = "you win!";
+                    point = 0;
+                    document.getElementById("point").innerHTML = "";
+
+                }   else if(dice == 7) {
+                    document.getElementById("status").innerHTML = "seven out!";
+                    point = 0;
+                    document.getElementById("point").innerHTML = "";
+
+                }
+                return dice;
+
+            
+            }
+        }
+
+            
+        
+    </script>
+    
+    <h1>Game of Craps</h1>
+
+    <button onclick='document.getElementById("dice").innerHTML= rollTwoDice()'>roll two dice</button>
+    <p id="dice"></p>
+
+    <p id="point"></p>
+
+    <p id="status"></p>
+
+    <!-- How about if we ask the computer to play N number of rounds and print the results of each? -->
+
+    
+
+
+</body>
+</html>
