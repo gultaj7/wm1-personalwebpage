@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 5 week 2</title>
+</head>
+<body>
+    <script>
+        // Given an array of integers as input
+
+        // Find the sum, average, min, and max of the elements.
+        // Find the most repeated and least repeated element of the array.     
+        const integers = new Array(3, 6, 24, 754, 5, 24, 24, 6, 6, 6);
+
+        let sum = 0;
+
+        for(let i = 0; i<integers.length; i++) {
+            sum += integers[i];
+        }
+        console.log("sum: " + sum);
+
+        let average = sum/integers.length;
+
+        console.log("average: " + average);
+
+        let min = Math.min(...integers);
+
+        console.log("min: " + min);
+
+        let max = Math.max(...integers);
+
+        console.log("max: " + max);
+
+    </script>
+</body>
+</html>
